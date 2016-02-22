@@ -30,6 +30,7 @@ hello-world:
   build: .
   links:
     - els
+    - mq
   entrypoint: /wait-for -w els:9200 -w mq:5672
   command: echo "hello world"
 
